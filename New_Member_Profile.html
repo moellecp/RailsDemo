@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>New Member Registration</title>
+		<form method="post" action="php/insert.php">
+		<link rel="stylesheet" type="text/css" href="../style/stylesheet.css" />
+		<div id="bucket">
+			<header>
+				<table>
+					<nav>
+						<ul>
+							<li><a href="home.html" class="current-page">Home</a></li>
+							<li><a href="portfolio.php">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+			</header>
+		</div>
+	</head>
+	<div id="container">
+		<header>
+			<h2>New Member Profile</h2>
+			<div class="clear"></div>
+		</header>
+	<body>
+		<form action="insert.php" method="post">
+			<p> Last name: <input type="text" name="lastname" />
+				First name: <input type="text" name="firstname" /> 
+				Middle initial: <input type="text" name="middleinitial" />
+				Sex: <input type="radio" name="sex" value="male" /> Male
+			<input type="radio" name="sex" value="female" /> Female </p>
+			<p> E-ID: <input type="text" name="JMUID" /> Receive E-mails? <input type="radio" name"CVE" />
+				Cell-phone: <input type="text" name="cellphone" />
+				Planned Graduation Year: <input type="text" name="graduation" /></p>
+			<p> *if Senior: </p>
+				<div id="select-group">
+					<select name="Concentration">
+						<option value="">Select Concentration</option>
+						<option value="1">Biotechnology</option>
+						<option value="2">Energy</option>
+						<option value="3">Environment</option>
+						<option value="4">IKM</option>
+						<option value="5">Engineering and Manufacturing</option>
+						<option value="6">Telecommunications</option>
+					</select><br />
+				</div>
+				<div id="select-group">
+					<select name="DualConcentration">
+						<option value="">Dual Concentrating?</option>
+						<option value="1">None</option>
+						<option value="2">Biotechnology</option>
+						<option value="3">Energy</option>
+						<option value="4">Environment</option>
+						<option value="5">IKM</option>
+						<option value="6">Engineering and Manufacturing</option>
+						<option value="7">Telecommunications</option>
+					</select>
+				</div>
+			<p> *if Junior: </p>
+					<select name="Sector_1">
+						<option value="">Sector 1</option>
+						<option value="1">Biotechnology</option>
+						<option value="2">Energy</option>
+						<option value="3">Environment</option>
+						<option value="4">IKM</option>
+						<option value="5">Engineering and Manufacturing</option>
+						<option value="6">Telecommunications</option>
+					</select><br />
+					<select name="Sector_2">
+						<option value="">Sector 2</option>
+						<option value="1">Biotechnology</option>
+						<option value="2">Energy</option>
+						<option value="3">Environment</option>
+						<option value="4">IKM</option>
+						<option value="5">Engineering and Manufacturing</option>
+						<option value="6">Telecommunications</option>
+					</select><br />
+					<select name="Sector_3">
+						<option value="">Sector 3</option>
+						<option value="1">Biotechnology</option>
+						<option value="2">Energy</option>
+						<option value="3">Environment</option>
+						<option value="4">IKM</option>
+						<option value="5">Engineering and Manufacturing</option>
+						<option value="6">Telecommunications</option>
+					</select><br />
+			<!---Submit--->
+			<form action="php/insert.php" method="post">
+				<input type="submit" value="Submit" />
+			</form>
+		</form>
+	<script type="text/javascript" src="js/groupselect2.js"></script>
+	<script type="text/php" src="php/student.php"></script>
+	<script type="text/php" src="php/insert.php"></script>
+	</body>
+	</div>
+	
+</html>
